@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it stays aligned with the left edge */
+  width: 100%; /* Make it span the entire width */
+  z-index: 100; /* Set a higher z-index to stay on top */
+}
+
+.header nav {
+  display: flex; /* Allow horizontal layout for navigation */
+  justify-content: space-between; /* Distribute links evenly */
+  padding: 1rem; /* Add some padding for visual comfort */
+  background-color: #fff; /* Set background color (optional) */
+  /* Add other styles as needed (e.g., border, shadow) */
+}
+
+.header nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.header nav li {
+  display: inline-block; /* Display links inline */
+}
+
+.header nav a {
+  color: #333; /* Set link text color */
+  text-decoration: none; /* Remove default underlining */
+  padding: 0.5rem 1rem; /* Add some padding for better click target */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect (optional) */
+}
+
+.header nav a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+.header nav a.active {
+  color: #007bff; /* Highlight the active link */
+  /* Add other highlighting styles (e.g., font weight, border) */
+}
